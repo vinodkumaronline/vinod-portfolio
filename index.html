@@ -29,15 +29,16 @@
       color: var(--muted);
       line-height: 1.5;
     }
-    section#about {
-      background: #3a3a3a;
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: left;
-      border: 1px solid rgba(245, 245, 220, 0.2);
-    }
+    section#about<section id="about" style="max-width:700px; margin:auto; padding:20px; background:#3a3a3a; border-radius:10px; border:1px solid rgba(245, 245, 220, 0.2); display:flex; align-items:center; gap:20px; color:#fff;">
+  <img src="images/profile.jpg" alt="Vinod Kumar" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid #f5f5dc;" />
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I am <strong>Vinod Kumar</strong> from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.
+    </p>
+    <p><strong>Skills:</strong> UI Design · Web Dev · Video · Content · Translation</p>
+  </div>
+</section>
     section#about h2 {
       margin-top: 0;
       margin-bottom: 10px;
