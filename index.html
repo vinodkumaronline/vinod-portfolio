@@ -1,107 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vinod Kumar | Portfolio</title>
-  <style>
-    :root {
-      --ash: #2e2e2e;
-      --beige: #f5f5dc;
-      --muted: #cfcfcf;
-    }
-    body {
-      margin: 0;
-      background-color: var(--ash);
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 40px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    /* About section */
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vinod Kumar | Portfolio</title>
+<style>
+  :root {
+    --ash: #2e2e2e;
+    --beige: #f5f5dc;
+    --muted: #cfcfcf;
+  }
+  body {
+    margin: 0;
+    background-color: var(--ash);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  section#about {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #3a3a3a;
+    border-radius: 10px;
+    border: 1px solid rgba(245, 245, 220, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  section#about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--beige);
+    flex-shrink: 0;
+  }
+  section#about h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+  }
+  section#about p {
+    margin: 10px 0;
+    color: var(--muted);
+  }
+  a.contact-btn {
+    display: inline-block;
+    margin-top: 40px;
+    background: var(--beige);
+    color: var(--ash);
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  a.contact-btn:hover {
+    background: #e0dcbc;
+  }
+  @media (max-width: 600px) {
     section#about {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
-      background: #3a3a3a;
-      border-radius: 10px;
-      border: 1px solid rgba(245, 245, 220, 0.2);
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      color: #fff;
-      text-align: left;
+      flex-direction: column;
+      text-align: center;
     }
     section#about img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--beige);
-      flex-shrink: 0;
+      margin-bottom: 15px;
     }
-    section#about h2 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: white;
-    }
-    section#about p {
-      margin: 10px 0;
-      color: var(--muted);
-    }
-    a.contact-btn {
-      display: inline-block;
-      margin-top: 40px;
-      background: var(--beige);
-      color: var(--ash);
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    a.contact-btn:hover {
-      background: #e0dcbc;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      section#about {
-        flex-direction: column;
-        text-align: center;
-      }
-      section#about img {
-        margin-bottom: 15px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
   <h1>Welcome to Vinod Kumar's Portfolio</h1>
   <p>This is my first GitHub Pages website. Stay tuned for UI design, web dev, and more!</p>
-
   <section id="about">
     <img src="images/Profile.jpeg" alt="Vinod Kumar" />
     <div>
       <h2>Vinod Kumar</h2>
-      <p>
-        I am from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.
-      </p>
+      <p>I am from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.</p>
       <p><strong>Skills:</strong> UI Design · Web Dev · Video · Content · Translation</p>
     </div>
   </section>
-
   <a href="mailto:vinumash@duck.com" class="contact-btn">Contact Me</a>
 </body>
 </html>
