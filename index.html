@@ -29,25 +29,43 @@
       color: var(--muted);
       line-height: 1.5;
     }
-  section#about<section id="about" style="max-width:700px; margin:auto; padding:20px; background:#3a3a3a; border-radius:10px; border:1px solid rgba(245, 245, 220, 0.2); display:flex; align-items:center; gap:20px; color:#fff;">
- <img src="images/Profile.jpeg" alt="Vinod Kumar" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid #f5f5dc;" />
-  <div>
-    <h2>About Me</h2>
-    <p>
-      I am <strong>Vinod Kumar</strong> from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.
-    </p>
-    <p><strong>Skills:</strong> UI Design · Web Dev · Video · Content · Translation</p>
-  </div>
-</section>
+
+    /* About section container */
+    section#about {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: #3a3a3a;
+      border-radius: 10px;
+      border: 1px solid rgba(245, 245, 220, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #fff;
+      text-align: left;
+    }
+
+    /* Image styling */
+    section#about img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--beige);
+      flex-shrink: 0;
+    }
+
     section#about h2 {
       margin-top: 0;
       margin-bottom: 10px;
       color: white;
     }
+
     section#about p {
       margin: 10px 0;
       color: var(--muted);
     }
+
     a.contact-btn {
       display: inline-block;
       margin-top: 40px;
@@ -62,6 +80,17 @@
     a.contact-btn:hover {
       background: #e0dcbc;
     }
+
+    /* Responsive for small screens */
+    @media (max-width: 600px) {
+      section#about {
+        flex-direction: column;
+        text-align: center;
+      }
+      section#about img {
+        margin-bottom: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -69,13 +98,18 @@
   <p>This is my first GitHub Pages website. Stay tuned for UI design, web dev, and more!</p>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am <strong>Vinod Kumar</strong> from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.
-    </p>
-    <p><strong>Skills:</strong> UI Design · Web Dev · Video · Content · Translation</p>
+    <img src="images/Profile.jpeg" alt="Vinod Kumar" />
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I am <strong>Vinod Kumar</strong> from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.
+      </p>
+      <p><strong>Skills:</strong> UI Design · Web Dev · Video · Content · Translation</p>
+    </div>
   </section>
 
   <a href="mailto:vinumash@duck.com" class="contact-btn">Contact Me</a>
 </body>
 </html>
+What I fixed:
+Removed invalid HTML inside the CSS block
