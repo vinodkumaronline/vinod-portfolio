@@ -29,6 +29,21 @@
     color: var(--muted);
     line-height: 1.5;
   }
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="_replyto" required /><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+    <button type="submit">Send</button>
+  </form>
+</section>
   section#about {
     max-width: 700px;
     margin: auto;
