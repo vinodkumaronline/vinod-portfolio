@@ -29,21 +29,6 @@
     color: var(--muted);
     line-height: 1.5;
   }
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-    <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name" required /><br /><br />
-
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="_replyto" required /><br /><br />
-
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-
-    <button type="submit">Send</button>
-  </form>
-</section>
   section#about {
     max-width: 700px;
     margin: auto;
@@ -56,14 +41,21 @@
     gap: 20px;
     color: #fff;
     text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   section#about img {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
     border: 3px solid var(--beige);
     flex-shrink: 0;
+  }
+  section#about img.design-room {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
   }
   section#about h2 {
     margin-top: 0;
@@ -95,6 +87,8 @@
     }
     section#about img {
       margin-bottom: 15px;
+      width: 150px !important;
+      height: auto !important;
     }
   }
 </style>
@@ -102,15 +96,17 @@
 <body>
   <h1>Welcome to Vinod Kumar's Portfolio</h1>
   <p>This is my first GitHub Pages website. Stay tuned for UI design, web dev, and more!</p>
+
   <section id="about">
-<img src="https://github.com/vinodkumaronline/vinod-portfolio/blob/main/Profile.jpeg?raw=true" alt="Vinod Kumar" />
-  <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/refs/heads/main/DesignRoom1.jpg" alt="Design Room 1" style="max-width:100%; height:auto;">
+    <img src="https://github.com/vinodkumaronline/vinod-portfolio/blob/main/Profile.jpeg?raw=true" alt="Vinod Kumar" />
+    <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/refs/heads/main/DesignRoom1.jpg" alt="Design Room 1" class="design-room" />
     <div>
       <h2>Vinod Kumar</h2>
       <p>I am from Kerala — a freelancer focused on UI design, web development, content writing, translation, and short videos for social media. I create simple, usable designs that tell a story.</p>
       <p><strong>Skills:</strong> UI Design · Web Dev · Video · Content · Translation</p>
     </div>
   </section>
- <a href="mailto:vinumash@duck.com" class="contact-btn" target="_blank">Contact Me</a>
+
+  <a href="mailto:vinumash@duck.com" class="contact-btn" target="_blank">Contact Me</a>
 </body>
 </html>
