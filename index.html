@@ -14,23 +14,7 @@
       --muted-text: #666;
       --white: #fff;
     }
-<!-- E-Commerce Designs -->
-<section class="design-gallery">
-  <h2>E-Commerce Product Pages</h2>
-  <div class="image-grid">
-    <img src="images/Ecom1.jpg" alt="E-Commerce Product Page Design 1">
-    <img src="images/Ecom2.jpg" alt="E-Commerce Product Page Design 2">
-  </div>
-</section>
 
-<!-- Mobile Banking Designs -->
-<section class="design-gallery">
-  <h2>Mobile Banking App Dashboards</h2>
-  <div class="image-grid">
-    <img src="images/MobileB0.jpg" alt="Mobile Banking Dashboard 1">
-    <img src="images/MobileB1.jpg" alt="Mobile Banking Dashboard 2">
-  </div>
-</section>
 
     /* Reset & basics */
     * {
@@ -161,7 +145,40 @@
     .contact-btn:hover {
       background: #d87e00;
     }
+        <style>
+    .design-gallery {
+      text-align: center;
+      margin: 40px 0;
+    }
 
+    .design-gallery h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+  </style>
     /* Responsive */
     @media (max-width: 700px) {
       section#about {
