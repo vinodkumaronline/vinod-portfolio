@@ -131,13 +131,11 @@
       text-align: center;
       margin: 40px 0;
     }
-
     .design-gallery h2 {
       font-size: 1.8rem;
       color: #333;
       margin-bottom: 20px;
     }
-
     .image-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -145,7 +143,6 @@
       max-width: 900px;
       margin: auto;
     }
-
     .image-grid img {
       width: 100%;
       height: 250px;
@@ -154,7 +151,6 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .image-grid img:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(0,0,0,0.2);
@@ -175,65 +171,30 @@
       transition: background-color 0.3s ease;
       cursor: pointer;
     }
- .contact-btn:hover {
-  background: #d87e00;
-}
-<section id="portfolio">
-  <h2>My Work</h2>
+    .contact-btn:hover {
+      background: #d87e00;
+    }
 
-  <div class="project">
-    <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/refs/heads/main/DesignRoom1.jpg" alt="Design Room 1" />
-    <div class="project-content">
-      <h3>Design Room 1</h3>
-      <p>A modern workspace design I created focusing on clarity and creativity.</p>
-    </div>
-  </div>
-
-  <!-- Add more projects here -->
-</section>
-
-<!-- Gallery Section -->
-<section id="gallery" class="design-gallery">
-  <h2>Design Gallery</h2>
-  <div class="image-grid">
-    <img src="https://github.com/vinodkumaronline/vinod-portfolio/blob/main/Ecom1.jpg?raw=true" alt="Ecommerce Design 1" />
-    <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/Ecom2.jpg" alt="Ecommerce Design 2" />
-    <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB0.jpg" alt="Mobile Banner 0" />
-    <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB1.jpg" alt="Mobile Banner 1" />
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" style="text-align:center; margin-top:50px;">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:vinumash@duck.com">vinumash@duck.com</a></p>
-  <a href="mailto:vinumash@duck.com" class="contact-btn">Send a Message</a>
-</section>
-/* Nav Bar */
-nav { 
-  position: sticky;
-  top: 0;
-  background: var(--white);
-  padding: 15px 20px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  z-index: 1000;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--primary-color);
-}
-
-
+    /* Nav Bar */
+    nav { 
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--primary-color);
     }
 
     /* Responsive */
@@ -257,27 +218,54 @@ nav a:hover {
     <h1>Vinod Kumar</h1>
     <p>Freelancer | UI Designer | Content Creator | Video Maker</p>
   </header>
-<nav>
-  <a href="#about">About</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
-</nav>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-
-  <!-- Design Gallery -->
-  <section class="design-gallery">
-    <h2>UI/UX Designs</h2>
-    <div class="image-grid">
-      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/Ecom1.jpg" alt="E-commerce Design 1" />
-      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/Ecom2.jpg" alt="E-commerce Design 2" />
-      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB0.jpg" alt="Mobile Banking Design 1" />
-      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB1.jpg" alt="Mobile Banking Design 2" />
+  <!-- About Section -->
+  <section id="about">
+    <img src="https://via.placeholder.com/160" alt="Vinod Kumar" />
+    <div>
+      <h2>About Me</h2>
+      <p>Hello! I am Vinod Kumar, a creative freelancer specializing in UI design, content writing, and short video creation for social media.</p>
+      <p class="skills">Skills: UI Design | Content Creation | Video Editing</p>
     </div>
   </section>
 
-  <a href="mailto:vinumash@duck.com" class="contact-btn">Contact Me</a>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="project">
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/refs/heads/main/DesignRoom1.jpg" alt="Design Room 1" />
+      <div class="project-content">
+        <h3>Design Room 1</h3>
+        <p>A modern workspace design I created focusing on clarity and creativity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="design-gallery">
+    <h2>Design Gallery</h2>
+    <div class="image-grid">
+      <img src="https://github.com/vinodkumaronline/vinod-portfolio/blob/main/Ecom1.jpg?raw=true" alt="Ecommerce Design 1" />
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/Ecom2.jpg" alt="Ecommerce Design 2" />
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB0.jpg" alt="Mobile Banner 0" />
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB1.jpg" alt="Mobile Banner 1" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="text-align:center; margin-top:50px;">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:vinumash@duck.com">vinumash@duck.com</a></p>
+    <a href="mailto:vinumash@duck.com" class="contact-btn">Send a Message</a>
+  </section>
 
 </body>
 </html>
+Now everything is:
