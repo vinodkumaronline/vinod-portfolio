@@ -15,7 +15,6 @@
       --white: #fff;
     }
 
-
     /* Reset & basics */
     * {
       box-sizing: border-box;
@@ -127,25 +126,7 @@
       line-height: 1.4;
     }
 
-    /* Contact Button */
-    .contact-btn {
-      display: inline-block;
-      background: var(--secondary-color);
-      color: var(--white);
-      padding: 14px 36px;
-      border-radius: 30px;
-      font-weight: 700;
-      font-size: 1.2rem;
-      text-decoration: none;
-      text-align: center;
-      margin: 50px auto 0;
-      transition: background-color 0.3s ease;
-      cursor: pointer;
-    }
-    .contact-btn:hover {
-      background: #d87e00;
-    }
-        <style>
+    /* Design Gallery Section */
     .design-gallery {
       text-align: center;
       margin: 40px 0;
@@ -178,7 +159,26 @@
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(0,0,0,0.2);
     }
-  </style>
+
+    /* Contact Button */
+    .contact-btn {
+      display: inline-block;
+      background: var(--secondary-color);
+      color: var(--white);
+      padding: 14px 36px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-align: center;
+      margin: 50px auto 0;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .contact-btn:hover {
+      background: #d87e00;
+    }
+
     /* Responsive */
     @media (max-width: 700px) {
       section#about {
@@ -221,8 +221,17 @@
       </div>
     </div>
 
-    <!-- Add more projects here -->
+  </section>
 
+  <!-- Design Gallery -->
+  <section class="design-gallery">
+    <h2>UI/UX Designs</h2>
+    <div class="image-grid">
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/Ecom1.jpg" alt="E-commerce Design 1" />
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/Ecom2.jpg" alt="E-commerce Design 2" />
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB0.jpg" alt="Mobile Banking Design 1" />
+      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/main/MobileB1.jpg" alt="Mobile Banking Design 2" />
+    </div>
   </section>
 
   <a href="mailto:vinumash@duck.com" class="contact-btn">Contact Me</a>
