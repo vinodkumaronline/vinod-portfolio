@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
-<meta name="description" content="Vinod Kumar Portfolio - UI Designer, Content Creator, Short Video Maker">
-<meta name="keywords" content="Vinod Kumar, UI Designer, Freelancer, Video Creator, Portfolio">
+  <meta name="description" content="Vinod Kumar Portfolio - UI Designer, Content Creator, Short Video Maker">
+  <meta name="keywords" content="Vinod Kumar, UI Designer, Freelancer, Video Creator, Portfolio">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vinod Kumar | Portfolio</title>
@@ -17,11 +17,9 @@
       --white: #fff;
     }
 
-    /* Reset & basics */
-    * {
-      box-sizing: border-box;
-      margin: 0; padding: 0;
-    }
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--background-color);
@@ -33,173 +31,16 @@
     }
 
     /* Header */
-    header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      color: var(--primary-color);
-      margin-bottom: 10px;
-    }
-    header p {
-      color: var(--muted-text);
-      font-size: 1.2rem;
-      max-width: 500px;
-      margin: 0 auto;
-    }
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { font-size: 2.8rem; color: var(--primary-color); margin-bottom: 10px; }
+    header p { color: var(--muted-text); font-size: 1.2rem; }
 
-    /* About Section */
-    section#about {
-      background: var(--white);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(46, 134, 222, 0.15);
-      display: flex;
-      gap: 30px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    section#about img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid var(--primary-color);
-      flex-shrink: 0;
-    }
-    section#about div {
-      flex: 1;
-      min-width: 280px;
-    }
-    section#about h2 {
-      color: var(--primary-color);
-      margin-bottom: 15px;
-      font-size: 2rem;
-    }
-    section#about p {
-      color: var(--text-color);
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
-    section#about p.skills {
-      color: var(--secondary-color);
-      font-weight: bold;
-      letter-spacing: 0.05em;
-    }
-
-    /* Portfolio Section */
-    section#portfolio {
-      margin-top: 60px;
-    }
-    section#portfolio h2 {
-      text-align: center;
-      color: var(--primary-color);
-      margin-bottom: 40px;
-      font-size: 2.2rem;
-    }<section id="portfolio-videos">
-  <h2>My Short Professional Videos</h2>
- <style>
-  #portfolio-videos {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-  }
-  .video-item {
-    margin-bottom: 30px;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-    .project {
-      background: var(--white);
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-    .project:hover {
-      transform: translateY(-6px);
-    }
-    .project img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-      height: 180px;
-    }
-    .project-content {
-      padding: 20px;
-    }
-    .project-content h3 {
-      margin-bottom: 10px;
-      color: var(--primary-color);
-    }
-    .project-content p {
-      color: var(--muted-text);
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    /* Design Gallery Section */
-    .design-gallery {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .design-gallery h2 {
-      font-size: 1.8rem;
-      color: #333;
-      margin-bottom: 20px;
-    }
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .image-grid img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .image-grid img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    }
-
-    /* Contact Button */
-    .contact-btn {
-      display: inline-block;
-      background: var(--secondary-color);
-      color: var(--white);
-      padding: 14px 36px;
-      border-radius: 30px;
-      font-weight: 700;
-      font-size: 1.2rem;
-      text-decoration: none;
-      text-align: center;
-      margin: 50px auto 0;
-      transition: background-color 0.3s ease;
-      cursor: pointer;
-    }
-    .contact-btn:hover {
-      background: #d87e00;
-    }
-
-    /* Nav Bar */
-    nav { 
-      position: sticky;
-      top: 0;
+    /* Navbar */
+    nav {
+      position: sticky; top: 0;
       background: var(--white);
       padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
+      display: flex; justify-content: center; gap: 25px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       z-index: 1000;
     }
@@ -209,22 +50,89 @@
       font-weight: 600;
       transition: color 0.3s ease;
     }
-    nav a:hover {
-      color: var(--primary-color);
-    }
+    nav a:hover { color: var(--primary-color); }
 
-    /* Responsive */
+    /* About */
+    section#about {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(46, 134, 222, 0.15);
+      display: flex; gap: 30px; align-items: center; flex-wrap: wrap;
+    }
+    section#about img {
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--primary-color);
+    }
+    section#about div { flex: 1; min-width: 280px; }
+    section#about h2 { color: var(--primary-color); margin-bottom: 15px; font-size: 2rem; }
+    section#about p.skills { color: var(--secondary-color); font-weight: bold; }
+
+    /* Portfolio */
+    section#portfolio, #portfolio-videos {
+      margin-top: 60px;
+    }
+    section#portfolio h2, #portfolio-videos h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+    }
+    .project {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .project:hover { transform: translateY(-6px); }
+    .project img { width: 100%; height: 180px; object-fit: cover; }
+    .project-content { padding: 20px; }
+    .project-content h3 { color: var(--primary-color); margin-bottom: 10px; }
+
+    /* Videos */
+    .video-item { margin-bottom: 30px; text-align: center; }
+    .video-item h3 { margin-bottom: 10px; color: var(--primary-color); }
+    .video-item video { border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+    /* Gallery */
+    .design-gallery { text-align: center; margin: 40px 0; }
+    .design-gallery h2 { font-size: 1.8rem; margin-bottom: 20px; color: #333; }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .image-grid img {
+      width: 100%; height: 250px; object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .image-grid img:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    /* Contact */
+    .contact-btn {
+      display: inline-block;
+      background: var(--secondary-color);
+      color: var(--white);
+      padding: 14px 36px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .contact-btn:hover { background: #d87e00; }
+
     @media (max-width: 700px) {
-      section#about {
-        flex-direction: column;
-        text-align: center;
-      }
-      section#about img {
-        margin-bottom: 20px;
-      }
-      section#about div {
-        min-width: auto;
-      }
+      section#about { flex-direction: column; text-align: center; }
+      section#about img { margin-bottom: 20px; }
     }
   </style>
 </head>
@@ -238,21 +146,23 @@
   <nav>
     <a href="#about">About</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#portfolio-videos">Videos</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
-     <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/f82868ba0b0053f63c38bfcfebfb57b726de90d3/Vinodkumar.jpeg" alt="Vinod Kumar"> 
+    <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/f82868ba0b0053f63c38bfcfebfb57b726de90d3/Vinodkumar.jpeg" alt="Vinod Kumar"> 
     <div>
       <h2>About Me</h2>
       <p>Hello! I am Vinod Kumar, a creative freelancer specializing in UI design, content writing, and short video creation for social media.</p>
       <p class="skills">Skills: UI Design | Content Creation | Video Editing</p>
     </div>
   </section>
+
+  <!-- Portfolio -->
   <section id="portfolio">
-     <section id="portfolio">
     <h2>My Work</h2>
     <div class="project">
       <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/refs/heads/main/DesignRoom1.jpg" alt="Design Room 1" />
@@ -263,52 +173,36 @@
     </div>
   </section>
 
-  <!-- ✅ Video Portfolio Section -->
+  <!-- Videos -->
   <section id="portfolio-videos">
     <h2>My Short Professional Videos</h2>
-
     <div class="video-item">
       <h3>Fast Slide</h3>
       <video width="320" height="240" controls>
-        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/3bdebad1b3a94e4eb4d868ccd56b202ae3fdc617/Fast_slide_1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/main/Fast_slide_1.mp4" type="video/mp4">
       </video>
     </div>
-
     <div class="video-item">
       <h3>User Navigate</h3>
       <video width="320" height="240" controls>
-        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/3bdebad1b3a94e4eb4d868ccd56b202ae3fdc617/User_navigate_2.mp4" type="video/mp4">
+        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/main/User_navigate_2.mp4" type="video/mp4">
       </video>
     </div>
-
     <div class="video-item">
       <h3>Smart Phone</h3>
       <video width="320" height="240" controls>
-        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/3bdebad1b3a94e4eb4d868ccd56b202ae3fdc617/Smart_phone_3.mp4" type="video/mp4">
+        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/main/Smart_phone_3.mp4" type="video/mp4">
       </video>
     </div>
-
     <div class="video-item">
       <h3>Social Media</h3>
       <video width="320" height="240" controls>
-        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/3bdebad1b3a94e4eb4d868ccd56b202ae3fdc617/Social_media_4.mp4" type="video/mp4">
+        <source src="https://github.com/vinodkumaronline/vinod-portfolio/raw/main/Social_media_4.mp4" type="video/mp4">
       </video>
     </div>
   </section>
-    <h2>My Work</h2>
-    <div class="project">
-      <img src="https://raw.githubusercontent.com/vinodkumaronline/vinod-portfolio/refs/heads/main/DesignRoom1.jpg" alt="Design Room 1" />
-      <div class="project-content">
-        <h3>Design Room 1</h3>
-        <p>A modern workspace design I created focusing on clarity and creativity.</p>
-      </div>
-    </div>
-  </section>
 
-   
-
-  <!-- Gallery Section -->
+  <!-- Gallery -->
   <section id="gallery" class="design-gallery">
     <h2>Design Gallery</h2>
     <div class="image-grid">
@@ -319,7 +213,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" style="text-align:center; margin-top:50px;">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:vinumash@duck.com">vinumash@duck.com</a></p>
